@@ -1,4 +1,5 @@
 # admin-panel
+<<<<<<< HEAD
 
 This template should help get you started developing with Vue 3 in Vite.
 
@@ -27,3 +28,6 @@ npm run dev
 ```sh
 npm run build
 ```
+=======
+AUT-Daralfonoon admin panel
+>>>>>>> a18b0d450482efce2e4c6810524cf635d41a3d66
