@@ -37,6 +37,11 @@ export default {
       value: ""
     }
   },
+  methods: {
+    getValue() {
+      return this.value
+    }
+  }
 }
 </script>
 
@@ -52,6 +57,7 @@ export default {
   padding: 10px;
   border: 1px solid #181818;
   border-bottom: 1px solid gray;
+  color: #ffffff;
 }
 
 .i-input:hover {

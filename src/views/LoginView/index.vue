@@ -1,8 +1,20 @@
 <template>
   <div class="login-container">
-    <InputField class="login-items" placeholder="username" label="User" input-type="text" />
-    <InputField class="login-items" placeholder="password" label="Pass" input-type="password" />
-    <button class="login-items">
+    <InputField
+        ref="username"
+        class="login-items"
+        placeholder="username"
+        label="User"
+        input-type="text"
+    />
+    <InputField
+        ref="password"
+        class="login-items"
+        placeholder="password"
+        label="Pass"
+        input-type="password"
+    />
+    <button v-on:click="login" class="login-items login-btn">
       Login
     </button>
   </div>
@@ -12,7 +24,15 @@
 import InputField from "./components/InputField.vue";
 export default {
   name: "index",
-  components: { InputField }
+  components: { InputField },
+  methods: {
+    login() {
+      const u = this.$refs["username"].getValue()
+      const p = this.$refs["password"].getValue()
+
+      console.log(u, p)
+    }
+  }
 }
 </script>
 
@@ -33,5 +53,17 @@ export default {
 
 .login-items {
   margin-bottom: 10px;
+}
+
+.login-btn {
+  padding: 5px 10px;
+  margin-top: 10px;
+  outline: none;
+  border: 0 solid black;
+}
+
+.login-btn:hover {
+  background: #343434;
+  color: #ffffff;
 }
 </style>
