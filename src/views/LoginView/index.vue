@@ -6,7 +6,7 @@
 </template>
 
 <script>
-import InputField from "./components/InputField";
+import InputField from "./components/InputField.vue";
 export default {
   name: "index",
   components: {InputField}
