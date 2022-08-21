@@ -32,6 +32,6 @@ export default {
 }
 
 .login-items {
-  margin-bottom: 5px;
+  margin-bottom: 10px;
 }
 </style>
